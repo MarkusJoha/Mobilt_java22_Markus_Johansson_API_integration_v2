@@ -15,8 +15,4 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, SelectionActivity::class.java)
         startActivity(intent)
     }
-
-    override fun onBackPressed() {
-        //super.onBackPressed()
-    }
 }

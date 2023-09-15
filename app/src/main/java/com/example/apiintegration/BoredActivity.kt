@@ -1,5 +1,6 @@
 package com.example.apiintegration
 
+import android.app.TaskStackBuilder
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -39,8 +40,9 @@ class BoredActivity : AppCompatActivity() {
 
     fun goBackToMainActivity(view: View) {
         val intent = Intent(this, MainActivity::class.java)
-        startActivity(intent)
-        finish()
+        val stackBuilder : TaskStackBuilder = TaskStackBuilder.create(this)
+        stackBuilder.addNextIntentWithParentStack(intent)
+        stackBuilder.startActivities(Bundle())
     }
 
     fun goBackToSelectionActivity(view: View) {

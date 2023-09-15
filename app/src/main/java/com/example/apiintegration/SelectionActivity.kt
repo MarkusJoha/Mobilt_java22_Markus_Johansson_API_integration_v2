@@ -1,5 +1,6 @@
 package com.example.apiintegration
 
+import android.app.TaskStackBuilder
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -13,8 +14,9 @@ class SelectionActivity : AppCompatActivity() {
 
     fun goBackToMainActivity(view: View) {
         val intent = Intent(this, MainActivity::class.java)
-        startActivity(intent)
-        finish()
+        val stackBuilder : TaskStackBuilder = TaskStackBuilder.create(this)
+        stackBuilder.addNextIntentWithParentStack(intent)
+        stackBuilder.startActivities(Bundle())
     }
     fun startJokeActivity(view: View) {
         val intent = Intent(this, JokeActivity::class.java)
