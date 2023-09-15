@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">API Integration</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="selection_button">Click For Selection Menu</string>
+    <string name="homepage_text">Welcome to the API app!</string>
+    <string name="selection_menu_text">Select an API to check out, or click on the back button to go back!</string>
+    <string name="weather_button_text">Bored API</string>
+    <string name="joke_button_text">Joke API</string>
+    <string name="generate_activity">Find Something to do!</string>
+    <string name="generate_joke">Generate a Joke!</string>
+    <string name="back_button_text">Back</string>
+    <string name="homepage_button_text">Back to Home</string>
+</resources>
